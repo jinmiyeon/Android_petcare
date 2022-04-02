@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    tools:context=".Menu">
+
+    <ViewFlipper
+        android:id="@+id/menu_imgslide"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnadd"
+        app:layout_constraintTop_toBottomOf="@+id/menu_imgslide">
+
+        <TextView
+
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/anikind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="개체 : "
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/aniname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름 : "
+            android:textSize="30dp" />
+
+        <TextView
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/anisex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="성별 : "
+            android:textSize="30dp" />
+
+        <TextView
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/aniage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="생년월일 : "
+            android:textSize="30dp" />
+
+        <TextView
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/animemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="특이사항 : "
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:fontFamily="@font/fonttext"
+        android:id="@+id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ffc000"
+        android:padding="10dp"
+        android:text="반려동물 등록하기"
+        android:onClick="bbb"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="411dp"
+        android:layout_height="121dp"
+        android:background="#00000000"
+        android:src="@drawable/time1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/HospitalSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="병원검색"
+            android:textStyle="bold"/>
+        <Button
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/AnimalSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="동물검색"
+            android:textStyle="bold"/>
+        <Button
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/Schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="일정관리"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

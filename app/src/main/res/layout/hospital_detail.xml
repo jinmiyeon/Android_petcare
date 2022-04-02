@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--label-->
+            <TextView
+                android:fontFamily="@font/fonttext"
+                android:id="@+id/hospital_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
+                android:textSize="100px"/>
+
+            <!--text-->
+            <TextView
+                android:fontFamily="@font/fonttext"
+                android:id="@+id/hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hospital_label" />
+
+        </RelativeLayout>
+
+        <!--map-->
+        <ViewFlipper
+            android:id="@+id/hospital_detail_imgslide"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <TextView
+            android:fontFamily="@font/fonttext"
+            android:layout_marginLeft="20px"
+            android:text="
+전화번호: 031-248-8275\n\n
+영업시간: 24시간 영업, 연중무휴\n\n
+편의시설: 주차, 예약, 무선인터넷, 반려동물 동반\n\n
+[ 석박사급 의료진 ]\n
+- 대학병원 팀장급 의료진 수술집도 및 진료.\n
+\n
+[ 24시 응급진료 ]\n
+-수의사와 간호사가 항시 입원환자들을 관리해주고 있으며\n
+-응급환자들을 위해 새벽에도 주간과 동일한 퀄리티의 의료서비스를 제공하고 있습니다.\n
+\n
+[ 연중무휴 ]\n
+-본 동물의료센터는 365일 24시간 아픈 아이들을 위해 열려있습니다.\n\n
+주소: 경기 수원시 장안구 송정로 114\n\n"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <!--image slide-->
+        <fragment
+            android:id="@+id/hospital_detail_googleMap"
+            class='com.google.android.gms.maps.MapFragment'
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+</ScrollView>

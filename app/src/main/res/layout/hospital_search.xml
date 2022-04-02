@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--검색 창-->
+    <EditText
+        android:fontFamily="@font/fonttext"
+        android:id="@+id/hospital_search_textfield"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <requestFocus />
+    </EditText>
+
+    <!--검색 목록-->
+    <ListView
+        android:id="@+id/hospital_search_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/hospital_search_textfield" />
+
+</RelativeLayout>

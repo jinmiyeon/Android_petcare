@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stopwatch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/timeView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="00:00:00:00"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:fontFamily="@font/fonttext"
+                android:id="@+id/btn_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffc000"
+                android:text="시작"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:fontFamily="@font/fonttext"
+                    android:id="@+id/btn_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:text="기록"
+                    android:textStyle="bold"
+                    android:background="@drawable/outline"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:fontFamily="@font/fonttext"
+                    android:id="@+id/btn_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dp"
+                    android:text="일시정지"
+                    android:textStyle="bold"
+                    android:background="@drawable/outline"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:fontFamily="@font/fonttext"
+                    android:id="@+id/btn_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="중지"
+                    android:textStyle="bold"
+                    android:background="@drawable/outline"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:fontFamily="@font/fonttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="산책 시간 뿐 아니라 중간에 반려동물이 배변하는 시간을 체크해 하루를 규칙적으로 만들어줍니다."
+            android:textColor="@color/black"
+            android:textStyle="bold"
+ />
+        <View
+            android:fontFamily="@font/fonttext"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp">
+
+        </View>
+
+        <TextView
+            android:fontFamily="@font/fonttext"
+            android:id="@+id/recordView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textSize="22dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
